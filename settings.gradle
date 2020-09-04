@@ -1,3 +1,4 @@
+include ':android-library'
 include ':kotlin-library'
 include ':app'
 rootProject.name = "GitLockDemo"

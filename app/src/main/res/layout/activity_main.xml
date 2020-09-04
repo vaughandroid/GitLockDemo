@@ -13,18 +13,36 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:text="Kotlin Library Version: "
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/kotlinLibraryVersion"
         app:layout_constraintEnd_toStartOf="@+id/kotlinLibraryVersion"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/kotlinLibraryVersion" />
 
     <TextView
         android:id="@+id/kotlinLibraryVersion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="X" />
+
+    <TextView
+        android:id="@+id/androidLibraryVersionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Android Library Version: "
+        app:layout_constraintBottom_toBottomOf="@+id/androidLibraryVersion"
+        app:layout_constraintEnd_toStartOf="@+id/androidLibraryVersion"
+        app:layout_constraintTop_toTopOf="@+id/androidLibraryVersion" />
+
+    <TextView
+        android:id="@+id/androidLibraryVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/kotlinLibraryVersionLabel"
+        app:layout_constraintTop_toBottomOf="@+id/kotlinLibraryVersion"
+        tools:text="Y" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
